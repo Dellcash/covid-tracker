@@ -1,30 +1,32 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <the-header />
+
+  <div class="container ">
+    <router-view />
   </div>
-  <router-view/>
 </template>
 
+<script>
+export default {
+  components: {
+    "the-header": require("@/components/TheHeader.vue").default,
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  @font-face {
+  font-family: "Vazir";
+  src: url("./fonts/Vazir.eot");
+  /* IE9 Compat Modes */
+  src: url("./fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Vazir.woff2") format("woff2"),
+    url("./fonts/Vazir.woff") format("woff"),
+    url("./fonts/Vazir.ttf") format("truetype");
+  /* Safari, Android, iOS */
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+body {
+  font-family: "Vazir" !important;
 }
 </style>
