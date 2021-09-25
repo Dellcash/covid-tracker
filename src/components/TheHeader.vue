@@ -1,6 +1,7 @@
 <template>
   <header class="text-center bg-blue-800 text-white p-4 mb-10">
-    <div>ردیاب کرونا</div>
+    <div class="mosa md:text-5xl mb-3"><i class="fa fa-viruses"></i>
+      ردیاب کوید-۱۹</div>
   </header>
 </template>
 
@@ -8,3 +9,8 @@
 export default {};
 </script>
 
+<style scoped>
+.mosa{
+  font-family: "Mosa";
+}
+</style>

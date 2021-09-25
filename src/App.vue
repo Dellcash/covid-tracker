@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style>
-  @font-face {
+@font-face {
   font-family: "Vazir";
   src: url("./fonts/Vazir.eot");
   /* IE9 Compat Modes */
@@ -26,6 +26,14 @@ export default {
   /* Safari, Android, iOS */
 }
 
+@font-face {
+  font-family: "Mosa";
+  src: url("./fonts/Mj_Mousa.TTF");
+}
+@font-face {
+  font-family: "Parand";
+  src: url("./fonts/Mj_Parand.TTF");
+}
 body {
   font-family: "Vazir" !important;
 }
