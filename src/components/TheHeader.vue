@@ -11,6 +11,6 @@ export default {};
 
 <style scoped>
 .mosa{
-  font-family: "Mosa";
+  font-family: "Parand";
 }
 </style>
